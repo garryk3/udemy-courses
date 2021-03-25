@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { fromEvent } from 'rxjs';
 import './App.css';
 import Form from './Form';
+import {MyForm} from './FinalForm';
 import useHttp from './use-http';
 interface ITodo {
   title: string;
@@ -38,6 +39,8 @@ function App() {
 console.log('iii', tasks, error);
   return (
     <div className="App">
+              <MyForm />
+
       <header className="App-header">
         <Form />
         <p>
